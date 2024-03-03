@@ -14,7 +14,7 @@ class FuncionesRecursivasTest {
 	@MethodSource("probandoSumatorio")
 	void testSumatorio(int numero, int expected) {
 		int resultado = FuncionesRecursivas.sumatorio(numero);
-		assertEquals(resultado, expected);
+		assertEquals(expected, resultado);
 	}
 
 	private static Stream<Arguments> probandoSumatorio(){
@@ -30,7 +30,7 @@ class FuncionesRecursivasTest {
 	@MethodSource("probandoPotencia")
 	void testPotencia(double a, int n, double expected) {
 		double resultado = FuncionesRecursivas.potencia(a, n);
-		assertEquals(resultado, expected);
+		assertEquals(expected, resultado);
 	}
 	
 	private static Stream<Arguments> probandoPotencia(){
@@ -47,7 +47,7 @@ class FuncionesRecursivasTest {
 	@MethodSource("probandoFibonacci")
 	void testFibonacci(int numero, int expected) {
 		int resultado = FuncionesRecursivas.fibonacci(numero);
-		assertEquals(resultado, expected);
+		assertEquals(expected, resultado);
 	}
 	
 	private static Stream<Arguments> probandoFibonacci(){

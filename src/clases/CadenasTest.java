@@ -15,7 +15,7 @@ class CadenasTest {
 	void testCuentaEspacios(String frase, int expected) {
 		Cadenas c = new Cadenas(frase);
 		int cantidad = c.cuentaEspacios();
-		assertEquals(cantidad, expected);
+		assertEquals(expected, cantidad);
 	}
 
 	private static Stream<Arguments> cantEspacios() {
@@ -33,7 +33,7 @@ class CadenasTest {
 	void testDelReves(String frase, String expected) {
 		Cadenas c = new Cadenas(frase);
 		String fraseAlReves = c.delReves();
-		assertEquals(fraseAlReves, expected);
+		assertEquals(expected, fraseAlReves);
 	}
 
 	private static Stream<Arguments> alReves() {
