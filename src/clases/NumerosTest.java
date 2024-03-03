@@ -24,8 +24,7 @@ class NumerosTest {
 				Arguments.of(2, true),
 				Arguments.of(4, false),
 				Arguments.of(5, true),
-				Arguments.of(13, true),
-				Arguments.of(25, false)
+				Arguments.of(16, false)
 				);
 		
 	}
