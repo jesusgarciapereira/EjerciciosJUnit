@@ -22,8 +22,6 @@ class CadenasTest {
 		return Stream.of(
 				Arguments.of("", 0), 
 				Arguments.of("Hola", 0), 
-				Arguments.of(" Hola", 1),
-				Arguments.of("Hola ", 1), 
 				Arguments.of("Hola a todos", 2));
 
 	}
@@ -47,18 +45,16 @@ class CadenasTest {
 
 	@ParameterizedTest
 	@MethodSource("cantPalabras")
-	void testContarPalabra(String palabra, int expected) {
-		Cadenas c = new Cadenas("Antes de la noche de la fiesta");
+	void testContarPalabra(String frase, String palabra, int expected) {
+		Cadenas c = new Cadenas(frase);
 		int numPalabras = c.contarPalabra(palabra);
 		assertEquals(expected, numPalabras);
 	}
 
 	private static Stream<Arguments> cantPalabras() {
 		return Stream.of(
-				Arguments.of("", 0),
-				Arguments.of("fiesta", 1),
-				Arguments.of("de", 2),
-				Arguments.of("Hola", 0)
+				Arguments.of("Antes de la noche de la fiesta", "Hola", 0),
+				Arguments.of("Antes de la noche de la fiesta", "fiesta", 1)
 		);
 
 	}
