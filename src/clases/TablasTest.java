@@ -19,7 +19,6 @@ class TablasTest {
 	
 	private static Stream<Arguments> pruebaEsMagica(){
 		return Stream.of(
-				// Arguments.of(new int[][]{{}}, true),
 				Arguments.of(new int[][] {{1, 1, 1}, {2, 2, 2}, {1, 1, 1}}, false),
 				Arguments.of(new int[][] {{2, 1, 4}, {2, 1, 4}, {2, 1, 4}}, false),
 				Arguments.of(new int[][] {{8, 1, 6}, {3, 5, 7}, {4, 9, 2}}, true)
