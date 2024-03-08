@@ -40,9 +40,8 @@ class NumerosTest {
 	private static Stream<Arguments> capicua(){
 		return Stream.of(
 				Arguments.of(0, true),
-				Arguments.of(9,true),
-				Arguments.of(10,false),
-				Arguments.of(33,true)
+				Arguments.of(13,false),
+				Arguments.of(313,true)
 				);
 		
 		
