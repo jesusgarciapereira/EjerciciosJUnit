@@ -53,6 +53,7 @@ class CadenasTest {
 
 	private static Stream<Arguments> cantPalabras() {
 		return Stream.of(
+				Arguments.of("", "Nada", 0),
 				Arguments.of("Antes de la noche de la fiesta", "Hola", 0),
 				Arguments.of("Antes de la noche de la fiesta", "fiesta", 1)
 		);
