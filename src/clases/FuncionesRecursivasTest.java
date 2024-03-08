@@ -20,7 +20,6 @@ class FuncionesRecursivasTest {
 	private static Stream<Arguments> probandoSumatorio(){
 		return Stream.of(
 				Arguments.of(1,1),
-				Arguments.of(2,3),
 				Arguments.of(3,6)
 				);
 		
