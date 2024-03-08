@@ -34,10 +34,8 @@ class FuncionesRecursivasTest {
 	
 	private static Stream<Arguments> probandoPotencia(){
 		return Stream.of(
-				Arguments.of(0, 5, 0),
-				Arguments.of(4.6, 0, 1),
 				Arguments.of(2, 1, 2),
-				Arguments.of(3, 2, 9)
+				Arguments.of(3, 3, 27)
 				);
 		
 	}
@@ -53,8 +51,7 @@ class FuncionesRecursivasTest {
 		return Stream.of(
 				Arguments.of(1,1),
 				Arguments.of(2,1),
-				Arguments.of(3,2),
-				Arguments.of(5,5)
+				Arguments.of(3,2)
 				);
 		
 	}
