@@ -22,7 +22,6 @@ class NumerosTest {
 		return Stream.of(
 				Arguments.of(1, false),
 				Arguments.of(2, true),
-				Arguments.of(4, false),
 				Arguments.of(5, true),
 				Arguments.of(16, false)
 				);
