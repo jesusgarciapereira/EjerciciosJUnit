@@ -36,7 +36,8 @@ class TablasTest {
 	private static Stream<Arguments> pruebaGira90(){
 		return Stream.of(
 				Arguments.of(null, null),
-				Arguments.of(new int[][] {{1, 2, 3}, {4, 5, 6}}, null),
+				Arguments.of(new int[2][3], null),
+				Arguments.of(new int[0][0], new int[0][0]),
 				Arguments.of(new int[][] {{1, 2, 3}, {4, 5, 6},{7, 8, 9}}, new int[][] {{7, 4, 1}, {8, 5, 2},{9, 6, 3}})
 				);
 		
